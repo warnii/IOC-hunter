@@ -1,0 +1,99 @@
+{
+  "report_name": "IOC Enrichment and Contextual Scoring",
+  "dataset_type": "synthetic",
+  "scoring_note": "Illustrative training score, not a probability of maliciousness.",
+  "input_count": 5,
+  "unique_valid_count": 4,
+  "results": [
+    {
+      "id": "IOC-001",
+      "type": "ipv4-addr",
+      "value": "192.0.2.25",
+      "source": "Training Feed Alpha",
+      "first_seen": "2026-10-27T09:00:00Z",
+      "last_seen": "2026-10-28T08:30:00Z",
+      "source_reliability": "B",
+      "analyst_confidence": 65,
+      "notes": "Synthetic example. Requires investigation. | Duplicate indicator from a second synthetic source.",
+      "sources": [
+        "Training Feed Alpha",
+        "Training Feed Gamma"
+      ],
+      "record_ids": [
+        "IOC-001",
+        "IOC-005"
+      ],
+      "source_count": 2,
+      "recency_score": 100,
+      "threat_score": 75,
+      "priority": "MEDIUM",
+      "assessment": "Requires analyst review; score is for triage only."
+    },
+    {
+      "id": "IOC-002",
+      "type": "domain-name",
+      "value": "suspicious-example.test",
+      "source": "Training Feed Beta",
+      "first_seen": "2026-10-27T10:00:00Z",
+      "last_seen": "2026-10-27T10:00:00Z",
+      "source_reliability": "C",
+      "analyst_confidence": 40,
+      "notes": "Synthetic domain for parsing and enrichment practice.",
+      "sources": [
+        "Training Feed Beta"
+      ],
+      "record_ids": [
+        "IOC-002"
+      ],
+      "source_count": 1,
+      "recency_score": 100,
+      "threat_score": 55,
+      "priority": "LOW",
+      "assessment": "Requires analyst review; score is for triage only."
+    },
+    {
+      "id": "IOC-003",
+      "type": "url",
+      "value": "https://suspicious-example.test/login",
+      "source": "Simulated Email Investigation",
+      "first_seen": "2026-10-28T07:45:00Z",
+      "last_seen": "2026-10-28T07:45:00Z",
+      "source_reliability": "B",
+      "analyst_confidence": 55,
+      "notes": "Fictional URL. Do not visit.",
+      "sources": [
+        "Simulated Email Investigation"
+      ],
+      "record_ids": [
+        "IOC-003"
+      ],
+      "source_count": 1,
+      "recency_score": 100,
+      "threat_score": 70,
+      "priority": "MEDIUM",
+      "assessment": "Requires analyst review; score is for triage only."
+    },
+    {
+      "id": "IOC-004",
+      "type": "file:hashes.SHA-256",
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "source": "Training Endpoint Alert",
+      "first_seen": "2026-10-28T08:15:00Z",
+      "last_seen": "2026-10-28T08:15:00Z",
+      "source_reliability": "A",
+      "analyst_confidence": 75,
+      "notes": "Synthetic hash used to test SHA-256 format validation.",
+      "sources": [
+        "Training Endpoint Alert"
+      ],
+      "record_ids": [
+        "IOC-004"
+      ],
+      "source_count": 1,
+      "recency_score": 100,
+      "threat_score": 88,
+      "priority": "HIGH",
+      "assessment": "Requires analyst review; score is for triage only."
+    }
+  ]
+}

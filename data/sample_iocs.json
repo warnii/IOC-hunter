@@ -1,0 +1,62 @@
+{
+  "dataset_name": "IOC Hunter Training Dataset",
+  "dataset_type": "synthetic",
+  "description": "Fictional indicators created for a defensive cybersecurity training exercise.",
+  "indicators": [
+    {
+      "id": "IOC-001",
+      "type": "ipv4-addr",
+      "value": "192.0.2.25",
+      "source": "Training Feed Alpha",
+      "first_seen": "2026-10-27T09:00:00Z",
+      "last_seen": "2026-10-28T08:30:00Z",
+      "source_reliability": "B",
+      "analyst_confidence": 65,
+      "notes": "Synthetic example. Requires investigation."
+    },
+    {
+      "id": "IOC-002",
+      "type": "domain-name",
+      "value": "suspicious-example.test",
+      "source": "Training Feed Beta",
+      "first_seen": "2026-10-27T10:00:00Z",
+      "last_seen": "2026-10-27T10:00:00Z",
+      "source_reliability": "C",
+      "analyst_confidence": 40,
+      "notes": "Synthetic domain for parsing and enrichment practice."
+    },
+    {
+      "id": "IOC-003",
+      "type": "url",
+      "value": "https://suspicious-example.test/login",
+      "source": "Simulated Email Investigation",
+      "first_seen": "2026-10-28T07:45:00Z",
+      "last_seen": "2026-10-28T07:45:00Z",
+      "source_reliability": "B",
+      "analyst_confidence": 55,
+      "notes": "Fictional URL. Do not visit."
+    },
+    {
+      "id": "IOC-004",
+      "type": "file:hashes.SHA-256",
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "source": "Training Endpoint Alert",
+      "first_seen": "2026-10-28T08:15:00Z",
+      "last_seen": "2026-10-28T08:15:00Z",
+      "source_reliability": "A",
+      "analyst_confidence": 75,
+      "notes": "Synthetic hash used to test SHA-256 format validation."
+    },
+    {
+      "id": "IOC-005",
+      "type": "ipv4-addr",
+      "value": "192.0.2.25",
+      "source": "Training Feed Gamma",
+      "first_seen": "2026-10-28T08:00:00Z",
+      "last_seen": "2026-10-28T08:30:00Z",
+      "source_reliability": "C",
+      "analyst_confidence": 50,
+      "notes": "Duplicate indicator from a second synthetic source."
+    }
+  ]
+}
