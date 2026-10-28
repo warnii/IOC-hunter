@@ -1,0 +1,78 @@
+{
+    "type": "bundle",
+    "id": "bundle--95157c7a-791f-434a-8e63-5fcf2fece905",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--82aea4da-c5ab-4cec-a63f-04224aa522d0",
+            "created": "2026-10-28T10:28:26.770519Z",
+            "modified": "2026-10-28T10:28:26.770519Z",
+            "name": "Training IOC: ipv4-addr",
+            "description": "Synthetic training indicator. Sources: Training Feed Alpha, Training Feed Gamma. Threat triage score: 75. Priority: MEDIUM.",
+            "pattern": "[ipv4-addr:value = '192.0.2.25']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-10-28T10:28:26.770519Z",
+            "labels": [
+                "threat-intelligence",
+                "training"
+            ],
+            "confidence": 65
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--082244dc-e895-4987-b4eb-649fca9d7ace",
+            "created": "2026-10-28T10:28:26.774658Z",
+            "modified": "2026-10-28T10:28:26.774658Z",
+            "name": "Training IOC: domain-name",
+            "description": "Synthetic training indicator. Sources: Training Feed Beta. Threat triage score: 51. Priority: LOW.",
+            "pattern": "[domain-name:value = 'suspicious-example.test']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-10-28T10:28:26.774658Z",
+            "labels": [
+                "threat-intelligence",
+                "training"
+            ],
+            "confidence": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8eb57e3c-257f-4375-bde6-185b137f04ca",
+            "created": "2026-10-28T10:28:26.775515Z",
+            "modified": "2026-10-28T10:28:26.775515Z",
+            "name": "Training IOC: url",
+            "description": "Synthetic training indicator. Sources: Simulated Email Investigation. Threat triage score: 70. Priority: MEDIUM.",
+            "pattern": "[url:value = 'https://suspicious-example.test/login']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-10-28T10:28:26.775515Z",
+            "labels": [
+                "threat-intelligence",
+                "training"
+            ],
+            "confidence": 55
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--edbb2aa7-19bd-42ec-ac62-3e9fe43c7175",
+            "created": "2026-10-28T10:28:26.776034Z",
+            "modified": "2026-10-28T10:28:26.776034Z",
+            "name": "Training IOC: file:hashes.SHA-256",
+            "description": "Synthetic training indicator. Sources: Training Endpoint Alert. Threat triage score: 88. Priority: HIGH.",
+            "pattern": "[file:hashes.'SHA-256' = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-10-28T10:28:26.776034Z",
+            "labels": [
+                "threat-intelligence",
+                "training"
+            ],
+            "confidence": 75
+        }
+    ]
+}
